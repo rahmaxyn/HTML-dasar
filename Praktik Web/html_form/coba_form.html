@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> <title>Form Sederhana</title> 
+        <link rel="icon" type="png" href="icon.png" sizes="16x16" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <form action="/action_page.php" target="_blank" method="post"> 
+            <label for="depan">Nama depan:</label><br> 
+            <input type="text" id="depan" name="i_name" value="Budi"><br> 
+            <label for="n_belakang">Nama Belakang:</label><br> 
+            <input type="text" id="n_belakang" name="i_belakan" value="Prawira"><br><br> 
+            <input type="submit" value="Kirim">
+            <input type="reset" value="Reset">
+        </form>
+        <p>
+            1. Saat menekan tombol reset, semua input kembali ke nilai awal yang telah ditentukan dalam atribut value. Jika tidak ada value, input akan dikosongkan. <br>
+            2. jika menekan tombol Kirim Data yang diisi dalam form akan dikirim ke URL yang tertera dalam atribut action (/action_page.php).  <br>
+            3. Atribut target:<br>
+               - _self : Form terbuka di tab yang sama.  <br>
+               - _blank: Form terbuka di tab baru.  <br>
+               - _parent dan _top: Digunakan jika ada frame dalam halaman web. <br>
+            4. Atribut method: <br>
+               - GET: Data dikirim dalam URL (terlihat pada address bar).<br> 
+               - POST: Data dikirim tersembunyi dalam body request. <br>
+        </p>
+    </body>
+</html>
