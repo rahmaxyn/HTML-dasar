@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halo CSS!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: blue;
+            color: yellow;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .sub-header {
+            color: white;
+            font-size: 16px;
+        }
+        .container {
+            display: flex;
+            padding: 10px;
+        }
+        .menu {
+            width: 300px;
+            border: 2px dashed gray;
+        }
+        .menu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .menu li {
+            padding: 8px;
+            font-size: 18px;
+        }
+        .menu a {
+            text-decoration: none;
+            color: black;
+            font-weight: normal;
+        }
+        .menu a:hover {
+            font-weight: bold;
+            text-decoration: underline ;
+        }
+        .content {
+            flex-grow: 1;
+            text-align: center;
+        }
+        .footer {
+            background-color: lightblue;
+            text-align: right;
+            padding: 10px;
+        }
+        .highlight {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        Halo CSS ! <br>
+        <span class="sub-header">Ini adalah website CSS saya</span>
+    </div>
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li><a href="#">Menu 1</a></li>
+                <li><a href="#">Menu 2</a></li>
+                <li><a href="#">Menu 3</a></li>
+                <li><a href="#">Menu 4</a></li>
+                <li><a href="#">Menu 5</a></li>
+                <li><a href="#">Menu 6</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <img src="logo.png" alt="Logo Politeknik Negeri Madiun" width="150"><br>
+            <h2>TRPL</h2>
+            <h3>Politeknik Negeri Madiun</h3>
+            <p class="highlight">Mewujudkan pendidikan tinggi vokasi dalam bidang Teknologi Informasi dan penerapannya yang berkualitas, inovatif dan berdaya saing Nasional.</p>
+        </div>
+    </div>
+    <div class="footer">
+        KUNNI SOFA RAHMAYANI | 244311046 | TRPL-24
+    </div>
+</body>
+</html>

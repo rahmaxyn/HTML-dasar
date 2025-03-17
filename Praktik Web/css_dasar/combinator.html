@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Halaman Beranda</title> 
+        <meta charset="utf-8"> 
+        <meta name="author" content="Kunni Sofa Rahmayani">
+        <meta name="nim" content="244311046">
+        <style>
+            div p {
+                color: red;
+            }
+            div > p {
+                background-color: yellow;
+            }
+            div + p {
+                background-color: darkgray;
+            }
+            div ~ p {
+                color: cyan;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>Aturan ini memilih semua elemen p yang berada di dalam elemen div. Aturan ini berlaku untuk semua elemen p di dalam div, terlepas dari posisinya.</p>
+            <p>Aturan ini memilih elemen p yang merupakan anak langsung dari elemen div, dan memberi latar belakang kuning. Hanya elemen p yang langsung berada di dalam div yang akan terpengaruh.</p>
+        </div>
+        <p>Aturan ini memilih elemen p pertama yang muncul langsung setelah elemen div. tetapi Jika ada banyak elemen p setelah sebuah div, hanya elemen pertama yang akan dipengaruhi.</p>
+        <p>Aturan ini memilih semua elemen p yang muncul setelah sebuah div, tetapi tidak harus langsung setelahnya.</p>
+    </body>
+</html>
