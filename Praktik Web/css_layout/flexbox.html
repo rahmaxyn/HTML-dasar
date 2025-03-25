@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar Flex Box</title>
+    <style>
+        .wadah_flex {
+            display: flex;
+            background-color: lightgray;
+            flex-flow: row wrap;
+            justify-content: center; 
+        }
+
+        .wadah_flex > div {
+            background-color: #87CEEB;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wadah_flex">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+
+    <p><b>Kesimpulan skenario 1 adalah:</b> Dengan menggunakan flexbox, elemen dalam wadah menjadi fleksibel dan dapat mengatur tata letak secara otomatis.</p>
+    <p><b>Kesimpulan skenario 2 adalah:</b> Dengan menambahkan properti gaya pada setiap div anak, tampilan menjadi lebih rapi dan mudah dibaca. Perubahan warna, margin, padding, dan ukuran font membuat setiap elemen lebih terlihat jelas dalam tata letak flexbox.</p>
+    <p><b>Kesimpulan skenario 3 adalah:</b> Dengan menambahkan `flex-direction`, kita dapat mengubah arah tata letak elemen dalam flexbox. Penggunaan nilai `row`, `column`, `row-reverse`, atau `column-reverse` mempengaruhi susunan elemen dalam kontainer.</p>
+    <p><b>Kesimpulan skenario 4 adalah:</b> Dengan menambahkan `flex-wrap`, kita bisa mengatur apakah elemen dalam flexbox akan tetap dalam satu baris (`nowrap`), turun ke baris berikutnya (`wrap`), atau membalik urutan baris (`wrap-reverse`).</p>
+    <p><b>Kesimpulan skenario 5 adalah:</b> Dengan menggunakan `flex-flow`, kita dapat menggabungkan `flex-direction` dan `flex-wrap` dalam satu deklarasi. Ini membuat kode lebih ringkas dan lebih mudah dikelola.</p>
+    <p><b>Kesimpulan skenario 6 adalah:</b> Dengan menggunakan `justify-content`, kita bisa mengatur bagaimana elemen-elemen dalam flexbox didistribusikan sepanjang sumbu utama. Misalnya, `center` untuk menengahkan, `space-between` untuk memberi jarak di antara elemen, atau `space-around` untuk menambah ruang di sekelilingnya.</p>
+</body>
+</html>
