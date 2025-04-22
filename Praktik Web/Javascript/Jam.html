@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jam Real-Time</title>
+  </head>
+  <body>
+    <h2>Waktu Saat Ini:</h2>
+    <div id="waktu" style="font-size: 24px; font-weight: bold;"></div>
+
+    <script>
+      function tampilkanWaktu() {
+        const sekarang = new Date();
+        const tanggal = sekarang.getDate().toString().padStart(2, '0');
+        const bulan = (sekarang.getMonth() + 1).toString().padStart(2, '0'); // bulan dimulai dari 0
+        const tahun = sekarang.getFullYear();
+        const jam = sekarang.getHours().toString().padStart(2, '0');
+        const menit = sekarang.getMinutes().toString().padStart(2, '0');
+        const detik = sekarang.getSeconds().toString().padStart(2, '0');
+        const tampil = `Tanggal: ${tanggal}/${bulan}/${tahun} | Jam: ${jam}:${menit}:${detik}`;
+        
+        document.getElementById("waktu").innerHTML = tampil;
+      }
+
+      setInterval(tampilkanWaktu, 1000);
+      tampilkanWaktu();
+    </script>
+  </body>
+</html>

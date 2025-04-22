@@ -1,0 +1,26 @@
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <title>Basic Dialog jQuery UI</title>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    </head>
+    <body>
+        <button id="bukaDialog">Buka Dialog</button>
+        <div id="dialog" title="Dialog Sederhana">
+        <p>Ini adalah jendela basic dialog dengan jQuery UI!</p>
+        </div>
+        <script>
+        $(document).ready(function(){
+            $("#dialog").dialog({
+            autoOpen: false
+            });
+
+            $("#bukaDialog").click(function(){
+            $("#dialog").dialog("open");
+            });
+        });
+        </script>
+    </body>
+</html>
