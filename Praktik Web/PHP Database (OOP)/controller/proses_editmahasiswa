@@ -1,0 +1,20 @@
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+require_once '../class/mahasiswa.php';
+$mahasiswa = new Mahasiswa();
+
+$npm    = $_POST['npm'];
+$nama   = $_POST['namaMhs'];
+$prodi  = $_POST['prodi'];
+$alamat = $_POST['alamat'];
+$noHP   = $_POST['noHP'];
+
+if ($mahasiswa->update($npm, $nama, $prodi, $alamat, $noHP)) {
+    header("Location: ../view/view_mahasiswa.php");
+    exit;
+} else {
+    echo "❌ Gagal mengupdate data mahasiswa.";
+}
+?>
